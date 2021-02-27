@@ -1,15 +1,15 @@
 apiVersion: integration/v1
 kind: Integration
-name: template
+name: linkinator
 channel: stable
 version: v20200514
-summary: Integration template
+summary: This integration allows you to check for broken links using the linkinator software
 license: Apache-2.0
-homepage: https://github.com/relay-integrations/template
-source: https://github.com/relay-integrations/template
+homepage: https://github.com/relay-integrations/relay-linkinator
+source: https://github.com/relay-integrations/relay-linkinator
 
 description: |
-  This is a template for creating a Relay Integration repository.
+  This simple integration allows you to point Relay at a website to detect broken links.
 
 owner:
   name: Puppet, Inc.
@@ -17,5 +17,4 @@ owner:
   url: https://puppet.com
 
 tags:
-- template
 - relay integration

@@ -1,0 +1,36 @@
+# Step metadata example - full description at:
+# https://github.com/puppetlabs/relay-rfcs/blob/master/content/0006-integration-layout/rfc.md#common-metadata
+apiVersion: integration/v1
+kind: Step
+name: linkinator-check
+version: 1
+summary: Check for broken links on a website
+
+description: |
+  This is a step for checking for broken links on a provided website using the linkinator software.
+
+build:
+  apiVersion: build/v1
+  kind: Docker
+
+publish:
+  repository: relaysh/linkinator-check
+
+# optional list of examples; each one can be a Step or a complete Workflow
+examples:
+- summary: An step checking for broken links
+  content:
+    apiVersion: v1
+    kind: Step
+    name: link-checker
+    image: relaysh/linkinator-check
+    spec:
+      websiteURL: !Parameter websiteURL
+
+schemas:
+  spec:
+    source: file
+    file: spec.schema.json
+  outputs:
+    source: file
+    file: outputs.schema.json
