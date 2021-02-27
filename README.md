@@ -1,6 +1,6 @@
-# Relay Link Checker
+# Linkinator Link Checker
 
-Integration with the ability to query websites for broken links
+Integration with the ability to query websites for broken links using the linkinator software
 
 ## Actions
 
@@ -8,4 +8,4 @@ The following are supported actions:
 
 |   Type    |  Name              |
 |-----------|--------------------|
-| Step      | [link-checker](/steps/link-checker)  |
+| Step      | [checker](/steps/checker)  |
