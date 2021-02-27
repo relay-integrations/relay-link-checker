@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"brokenLinks": {
+			"type": "string",
+			"description": "The string containing the list of broken urls"
+		}
+	},
+	"required": [
+		"message"
+	],
+	"additionalProperties": false
+}
